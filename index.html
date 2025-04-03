@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+
+</head>
+<body>
+    <header>
+        <h2>KNULL_STUDIOS</h2>
+        <nav>
+            <a href="">Home</a>
+            <a href="">More</a>
+            <a href="">Developer</a>
+            <button class="btn-sign">Premium</button>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+           <input type="text" placeholder="Enter username..." required><br>
+           <input type="password" placeholder="Enter your password.." required>
+           <button class="login-btn">Login</button>
+
+           <p>Don't hav an account? Press Signup</p>
+           <button class="signup-btn">Signup</button>
+           <p id="message-box" style="color: red;"></p>
+
+           </div>
+
+      </main>
+<!-- Supabase SDK must be loaded before backend.js -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="backend.js"></script>
+
+</body>
+</html>

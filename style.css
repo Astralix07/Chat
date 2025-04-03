@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     min-height: 100vh;
+     background-color: black;
+}
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    z-index: 999;
+}
+header h2{
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 330;
+    animation: scaleUp 0.5s ease-out forwards;
+    color: red;
+    text-shadow: 0 7px rgb(160, 80, 80);
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: -3%;
+    
+}
+nav a{
+    font-size: 1rem;
+    letter-spacing: o.1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 300ms;
+    font-weight: 400;
+    animation: scaleUp 0.5s ease-out forwards;
+}
+nav a:hover{
+    color: grey;
+}
+.btn-sign{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 20px;
+    transition: 300ms;
+    border: none;
+    cursor: pointer;
+    animation: scaleUp 0.5s ease-out forwards;
+}
+.btn-sign:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+}
+/* Keyframes for scaling effect */
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* Styling Main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+}
+
+/* Styling Div */
+main > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px;
+    background: #282828;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: scaleUp 0.5s ease-out forwards;
+}
+
+/* Styling Input Fields */
+input {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+    font-size: 16px;
+    animation: scaleUp 0.6s ease-out forwards;
+}
+
+/* Add focus effect */
+input:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 10px #ff3300;
+}
+
+.login-btn {
+    width: 130px;
+    transform: translateX(53px);
+    padding: 5px;
+    color: #ff0000;
+    background-color: #1e1e1e;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+}
+
+.login-btn:hover {
+    color: #000;
+    background-color: #ff0000;
+    transform: translateX(53px) scale(1.05);
+    box-shadow: 0 0 10px #ff0000, 0 0 15px #ff0000;
+}
+
+.login-btn:active {
+    transform: translateX(53px) scale(0.98);
+    box-shadow: 0 0 5px #ff0000;
+}
+p{
+    color: white;
+}
+.signup-btn {
+    width: 130px;
+    transform: translateX(53px);
+    padding: 5px;
+    color: #ff0000;
+    background-color: #1e1e1e;
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+}
+
+.signup-btn:hover {
+    color: #000;
+    background-color: #ff0000;
+    transform: translateX(53px) scale(1.05);
+    box-shadow: 0 0 10px #ff0000, 0 0 15px #ff0000;
+}
+
+.signup-btn:active {
+    transform: translateX(53px) scale(0.98);
+    box-shadow: 0 0 5px #ff0000;
+}
+#message-box {
+    font-size: 14px;
+    margin-top: 10px;
+    color: red;
+    text-align: center;
+}
+
+
